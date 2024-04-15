@@ -63,7 +63,7 @@ lista_po_posortowaniu = sorted(lista_po_polaczeniu, key=lambda x: x[1], reverse=
 # Wyświetl posortowaną listę
 print("Posortowana lista:")
 for element in lista_po_posortowaniu:
-    print(element[0], ":", element[1])
+    print(f"{element[0]} : {element[1]}")
 
 
 #dla słownika

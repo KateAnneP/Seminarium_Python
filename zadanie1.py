@@ -27,7 +27,7 @@ while(dzialanie != '0'):
         if b != 0:
             print(f"{a} / {b} = {a / b}")
         else:
-            print("Dzielenie przez 0 jest niedozwolone chuncwocie!")
+            print("Dzielenie przez 0 jest niedozwolone!")
     else:
         print("Podano nieprawidłowe działanie!")
 
