@@ -14,5 +14,5 @@ plt.plot(lata, razem, 'ro', lata, miasta, 'bs', lata, wsie, 'g^')
 plt.xlabel('Rok')
 plt.ylabel('Liczba ludności (mln)')
 plt.title('Ludność Polski we wsiach, miastach i razem w latach 1950 - 2017')
-
+plt.legend(['razem','miasto','wieś'])
 plt.show()

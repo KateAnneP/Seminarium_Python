@@ -42,25 +42,25 @@ lista_krotnosci = []
 print("------ Lista: --------")
 for imie in lista_imion:
     istnieje = False
-    for j in range(len(lista_imion2)):
-        if lista_imion2[j] == imie:
-            lista_krotnosci[j] += krotnosc[lista_imion.index(imie)]
-            istnieje = True
-            break
-    if not istnieje:
+    if(len(lista_imion2) == 0):
         lista_imion2.append(imie)
         lista_krotnosci.append(krotnosc[lista_imion.index(imie)])
+    else:
+        for j in range(len(lista_imion2)):
+            if lista_imion2[j] == imie:
+                lista_krotnosci[j] += krotnosc[lista_imion.index(imie)]
+                istnieje = True
+                break
+        if not istnieje:
+            lista_imion2.append(imie)
+            lista_krotnosci.append(krotnosc[lista_imion.index(imie)])
 
 # print(lista_imion2)
 # print(lista_krotnosci)
 
-# Połącz listę imion z listą krotności
-lista_po_polaczeniu = list(zip(lista_imion2, lista_krotnosci))
+lista_po_polaczeniu = list(zip(lista_imion2, lista_krotnosci))  #Łączenie obu list
+lista_po_posortowaniu = sorted(lista_po_polaczeniu, key=lambda x: x[1], reverse=True)   #Sortowanie listy po krotności
 
-# Posortuj listę po krotnościach w kolejności malejącej
-lista_po_posortowaniu = sorted(lista_po_polaczeniu, key=lambda x: x[1], reverse=True)
-
-# Wyświetl posortowaną listę
 print("Posortowana lista:")
 for element in lista_po_posortowaniu:
     print(f"{element[0]} : {element[1]}")

@@ -10,7 +10,7 @@ ludnosc = [1, 1.9, 7.5, 11, 12, 9, 11.107, 22.11, 27.177, 32.107, 34.849, 23.93,
 
 plt.plot(lata, ludnosc, 'ro')
 plt.xlabel('Rok')
-plt.ylabel('Liczba ludności')
+plt.ylabel('Liczba ludności (mln)')
 plt.title('Liczba ludności przez wieki')
 
 plt.show()
