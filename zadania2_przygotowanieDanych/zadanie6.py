@@ -21,3 +21,6 @@ for col in kolumny_symboliczne:
     print(rezygnacje[col].value_counts())
     print("\n")
 
+print("\nAnaliza dla całości danych: ")
+print(rezygnacje.describe())
+
