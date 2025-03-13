@@ -5,4 +5,4 @@ Directories:
 - data - includes all the datasets used for the tasks
 - zadania1_wprowadzenie - basic Python tasks, using Python commands and data types, drawing plots using pyplot
 - zadania2_przygotowanieDanych - preparing the data for analysis, correlations, standarization etc.
-- zadania3_grupowanie - data grouping
+- zadania3_grupowanie - data clustering
